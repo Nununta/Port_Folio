@@ -1,0 +1,126 @@
+.header {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: #f3f4f5;
+  z-index: 2;
+}
+
+.header-nav {
+  padding: 10px 40px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  position: relative;
+  top: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+  + .nav-item {
+    margin-left: 30px;
+  }
+  .nav-main {
+    font-size: 18px;
+  }
+
+  .nav-sub {
+    font-size: 10px;
+  }
+
+  .nav-num {
+    font-size: 10px;
+    padding-top: 15px;
+  }
+
+  &:first-child {
+    a {
+      // color: rgb(123, 220, 181);
+    }
+  }
+
+  &:nth-child(5) {
+    // background-color: rgb(123, 220, 181);
+    // border-radius: 1rem;
+    a {
+      // color: cl(white);
+    }
+  }
+
+  a {
+    display: flex;
+    flex-flow: column;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+//Toptitle
+
+.top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  min-height: 700px;
+  align-items: center;
+  color: cl(white);
+}
+
+.vegas-content-scrollable {
+  width: 100%;
+}
+
+.top-title {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  background-color: rgba(106, 255, 166, 0.5);
+
+  .top-message {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  .catch-copy-wrap {
+    text-align: left;
+    padding-left: 70px;
+    margin-top: 60px;
+    color: #32373c;
+    p {
+      font-size: 18px;
+      color: black;
+    }
+  }
+  .catch-copy {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  .contact-block {
+    margin-top: 30px;
+    a {
+      background-color: #32373c;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 1.55em;
+      display: flex;
+      width: 220px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+}

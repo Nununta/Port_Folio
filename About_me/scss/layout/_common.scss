@@ -1,0 +1,21 @@
+.container {
+  padding: 0 28px 60px 28px;
+}
+
+.cmn-section {
+  padding-top: 100px;
+}
+
+.cmn-title {
+  font-size: 2rem;
+  text-align: center;
+  &::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: rgb(123, 220, 181);
+    display: block;
+    margin: 0 auto;
+    margin-top: 14px;
+  }
+}

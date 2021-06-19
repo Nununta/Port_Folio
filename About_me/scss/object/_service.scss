@@ -1,0 +1,27 @@
+.service-cont {
+  padding-top: 40px;
+}
+
+.service-list {
+  display: flex;
+}
+
+.service-item {
+  display: flex;
+  flex-flow: column-reverse;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
+  + .service-item {
+    margin-left: 20px;
+  }
+  .text {
+    padding: 18px;
+    text-align: center;
+    .title {
+      padding-bottom: 30px;
+      font-weight: 700;
+    }
+    .desc {
+      font-size: 0.875rem;
+    }
+  }
+}

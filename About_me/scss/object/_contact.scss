@@ -1,0 +1,29 @@
+.contact-cont {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #7bdcb5;
+  text-align: center;
+  color: cl(white);
+  //   .desc {
+  //   }
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact-button {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    background-color: cl(white);
+    color: #7bdcb5;
+    margin: 0 auto;
+  }
+}
