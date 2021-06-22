@@ -85,9 +85,9 @@ $(function () {
 $(function () {
   $(".top, top-section").vegas({
     slides: [
-      { src: "./image/christopher-gower-m_HRfLhgABo-unsplash.jpg" },
-      { src: "./image/john-schnobrich-2FPjlAyMQTA-unsplash.jpg" },
-      { src: "./image/krakenimages-Y5bvRlcCx8k-unsplash.jpg" },
+      { src: "./image/Top-1.jpg" },
+      { src: "./image/Top-2.jpg" },
+      { src: "./image/Top-3.jpg" },
     ],
     delay: 5000,
     timer: false,

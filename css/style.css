@@ -516,4 +516,76 @@ strong {
   margin: 0 auto;
   font-size: 24px;
 }
+
+.skill-cont {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  background-image: url("../../image/skill-1.jpg");
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  border-radius: 15px;
+}
+
+.skill-list {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.skill-item {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.skill-item + .skill-item {
+  margin-left: 20px;
+}
+
+.skill-item .level {
+  margin-top: 20px;
+}
+
+.skill-item .image {
+  height: 52%;
+  padding: 10px;
+  -webkit-transition: -webkit-transform 0.7s ease;
+  transition: -webkit-transform 0.7s ease;
+  transition: transform 0.7s ease;
+  transition: transform 0.7s ease, -webkit-transform 0.7s ease;
+}
+
+.skill-item .image:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.skill-item .image img {
+  background-color: white;
+  height: 100%;
+  padding: 30px;
+}
 /*# sourceMappingURL=style.css.map */

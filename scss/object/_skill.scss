@@ -1,0 +1,51 @@
+.skill-cont {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  background-image: url("../../image/skill-1.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  border-radius: 15px;
+}
+
+.skill-list {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: cl(white);
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.skill-item {
+  width: 25%;
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: center;
+  text-align: center;
+  + .skill-item {
+    margin-left: 20px;
+  }
+  .level {
+    margin-top: 20px;
+  }
+  .image {
+    height: 52%;
+    padding: 10px;
+    transition: transform 0.7s ease;
+    &:hover {
+      transform: translateY(-20px);
+    }
+
+    img {
+      background-color: white;
+      height: 100%;
+      padding: 30px;
+    }
+  }
+}
