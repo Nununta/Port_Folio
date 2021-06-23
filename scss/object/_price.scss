@@ -1,9 +1,7 @@
-.price {
-}
-
 .price-wrap {
   background: linear-gradient(25deg, #f13f79, #ffc778);
-  margin-top: 40px;
+  width: 90%;
+  margin: 40px auto 0;
 }
 
 .price-cont {
@@ -11,66 +9,81 @@
 }
 
 .price-list {
-  display: flex;
   background-color: white;
   border-radius: 10px;
   width: 80%;
   margin: 0 auto;
+  @include overTab {
+    display: flex;
+  }
 }
 
 .price-item {
+  text-transform: uppercase;
   margin: auto;
   text-align: center;
-  width: 40%;
-  padding: 28px;
+  padding: 0 15px 28px 15px;
+  @include overTab {
+    width: 40%;
+    padding: 0 0 0 20px;
+  }
   &:nth-child(2) {
-    width: 60%;
+    @include overTab {
+      width: 60%;
+      padding: 20px;
+    }
   }
   p {
-    font-size: 12px;
+    font-size: 11px;
     color: red;
-    text-align: left;
     padding-top: 15px;
     font-weight: 700;
+    @include overTab {
+      text-align: left;
+    }
   }
 }
 
 .price-table-item-image {
+  padding-top: 20px;
+  @include overTab {
+    padding-top: initial;
+  }
   img {
     border-radius: 10px;
   }
 }
 
 .price-table-item-title {
-  // font-weight: 700;
-  font-size: 20px;
-}
-
-.price-table-item-price {
-  font-size: 20px;
-  line-height: 1.5;
-  span {
-    font-size: 18px;
+  font-weight: 600;
+  font-size: 26px;
+  width: 80%;
+  margin: auto;
+  @include overTab {
+    width: initial;
+    font-size: 20px;
+    margin: initial;
   }
 }
 
-.price-table-item-desc {
-  font-size: 0.875rem;
-  color: rgb(148, 148, 143);
-}
-
-.price-table-item-menu {
-  margin-top: 15px;
-  li {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+.price-table-item-price {
+  line-height: 1.5;
+  font-size: 28px;
+  @include overTab {
+    font-size: 20px;
+  }
+  span {
+    @include overTab {
+      font-size: 18px;
+    }
   }
 }
 
 .service-contact {
-  margin-top: 20px;
+  margin-top: 30px;
+  @include overTab {
+    margin-top: 20px;
+  }
   a {
     display: flex;
     justify-content: center;
@@ -78,20 +91,25 @@
     text-align: center;
     cursor: pointer;
     color: cl(white);
-    width: 250px;
+    max-width: 250px;
     height: 40px;
-    background-color: rgb(123, 220, 181);
+    background-color: #022bf3;
     margin: 0 auto;
     border-radius: 1.55em;
   }
 }
 
 .service-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee;
+  @include overTab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   + .service-menu {
-    margin-top: 20px;
+    margin-top: 30px;
+    @include overTab {
+      margin-top: 10px;
+    }
   }
 }

@@ -30,6 +30,7 @@
     margin-left: 30px;
   }
   .nav-main {
+    text-transform: capitalize;
     font-size: 18px;
   }
 
@@ -42,25 +43,14 @@
     padding-top: 15px;
   }
 
-  &:first-child {
-    a {
-      // color: rgb(123, 220, 181);
-    }
-  }
-
-  &:nth-child(5) {
-    // background-color: rgb(123, 220, 181);
-    // border-radius: 1rem;
-    a {
-      // color: cl(white);
-    }
-  }
-
   a {
     display: flex;
     flex-flow: column;
     width: 100px;
     height: 100px;
+    &:hover {
+      color: red;
+    }
   }
 }
 
@@ -84,34 +74,58 @@
 }
 
 .top-title {
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 60px;
   width: 100%;
-  background-color: rgba(106, 255, 166, 0.5);
-
+  background-color: rgba(226, 241, 103, 0.8);
+  @include overTab {
+    padding-top: 60px;
+  }
   .top-message {
+    text-transform: uppercase;
     font-size: 34px;
     font-weight: bold;
+    span {
+      display: inline-block;
+      @include overTab {
+        display: initial;
+      }
+    }
   }
   .catch-copy-wrap {
-    text-align: left;
-    padding-left: 70px;
     margin-top: 60px;
-    color: #32373c;
+    color: #fff;
+    @include overTab {
+      text-align: left;
+      padding-left: 70px;
+    }
     p {
-      font-size: 18px;
-      color: black;
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+      text-transform: capitalize;
+      @include overTab {
+        font-size: 16px;
+      }
     }
   }
   .catch-copy {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     padding-bottom: 30px;
+    span {
+      display: block;
+      @include overTab {
+        display: inline-block;
+      }
+    }
   }
+
   .contact-block {
     margin-top: 30px;
     a {
-      background-color: #32373c;
+      // background-color: #32373c;
+      background-color: #43cbe0;
       color: #fff;
       cursor: pointer;
       border-radius: 1.55em;

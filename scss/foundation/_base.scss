@@ -33,14 +33,14 @@ $colors: (
 // @include overTab
 //--------------------------------------------------
 
-@mixin overTab {
-  @media print, screen and (min-width: 768px) {
+@mixin overMobile {
+  @media print, screen and (min-width: 520px) {
     @content;
   }
 }
 
-@mixin overmobile {
-  @media print, screen and (min-width: 375px) {
+@mixin overTab {
+  @media print, screen and (min-width: 960px) {
     @content;
   }
 }

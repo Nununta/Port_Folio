@@ -1,0 +1,65 @@
+.About {
+  &.cmn-section {
+    padding-top: 20px;
+  }
+}
+
+.about-cont {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  background-image: url("../../image/about-7.jpg");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.about-list {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: cl(white);
+  font-size: 16px;
+  padding: 20px 10px;
+  @include overTab {
+    font-size: 18px;
+  }
+  @include overTab {
+    display: flex;
+  }
+}
+
+.about-item {
+  margin: auto;
+  &:first-child {
+    width: 60%;
+    @include overTab {
+      width: 40%;
+    }
+  }
+  &:nth-child(2) {
+    @include overTab {
+      width: 60%;
+    }
+  }
+
+  .text {
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+    span {
+      color: #ff6b00;
+    }
+  }
+  .image {
+    padding: 30px;
+    img {
+      height: 80%;
+      background-color: cl(white);
+      border-radius: 50%;
+    }
+  }
+}

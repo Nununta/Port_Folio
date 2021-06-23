@@ -1,9 +1,15 @@
 .service-cont {
-  padding-top: 40px;
+  padding: 40px 10px 0 10px;
 }
 
 .service-list {
-  display: flex;
+  width: 90%;
+  margin: auto;
+  @include overTab {
+    display: flex;
+    width: 100%;
+    margin: initial;
+  }
 }
 
 .service-item {
@@ -12,21 +18,41 @@
   flex: 1;
   flex-flow: column-reverse;
   box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+  @include overTab {
+    width: initial;
+    margin: initial;
+  }
   + .service-item {
-    margin-left: 20px;
+    margin-top: 50px;
+    @include overTab {
+      margin-left: 20px;
+      margin-top: 0;
+    }
   }
   .text {
+    text-transform: capitalize;
     display: flex;
     flex-flow: column;
-
-    padding: 18px;
+    padding: 10px;
     text-align: center;
+    @include overTab {
+      padding: 18px;
+    }
+    span {
+      display: inline-block;
+      @include overTab {
+        display: initial;
+      }
+    }
     .title {
       font-size: 1.5rem;
-      padding-bottom: 30px;
+      padding-bottom: 10px;
       font-weight: 700;
-    }
-    .desc {
+      @include overTab {
+        padding-bottom: 30px;
+      }
     }
   }
 }

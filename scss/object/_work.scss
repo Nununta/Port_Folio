@@ -1,21 +1,38 @@
 .work-cont {
+  width: 90%;
+  margin: auto;
   padding-top: 40px;
 }
 
 .work-list {
-  display: flex;
+  text-align: center;
+  @include overTab {
+    display: flex;
+  }
 }
 
 .work-item {
+  width: 80%;
+  margin: auto;
   text-align: center;
   display: flex;
+  justify-content: center;
   padding: 10px;
   box-shadow: 0 0px 35px rgba(0, 0, 0, 0.1);
+  @include overTab {
+    width: initial;
+    margin: initial;
+  }
   + .work-item {
-    margin-left: 10px;
+    margin-top: 20px;
+    @include overTab {
+      margin-left: 10px;
+      margin-top: 0;
+    }
   }
 
   .work_item-wrap {
+    width: 100%;
     position: relative;
 
     .image {

@@ -1,19 +1,20 @@
-.container {
-  padding: 0 28px 0 28px;
-}
-
 .cmn-section {
-  padding-top: 100px;
+  padding-top: 80px;
+  @include overTab {
+    padding-top: 100px;
+  }
 }
 
 .cmn-title {
   font-size: 2rem;
   text-align: center;
+  text-transform: capitalize;
   &::after {
     content: "";
     width: 80px;
     height: 3px;
-    background-color: rgb(123, 220, 181);
+
+    background-color: #ff9800;
     display: block;
     margin: 0 auto;
     margin-top: 14px;
