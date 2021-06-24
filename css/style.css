@@ -151,8 +151,14 @@ strong {
 
 .top-title .top-message {
   text-transform: uppercase;
-  font-size: 34px;
+  font-size: 26px;
   font-weight: bold;
+}
+
+@media print, screen and (min-width: 520px) {
+  .top-title .top-message {
+    font-size: 34px;
+  }
 }
 
 .top-title .top-message span {
@@ -178,22 +184,50 @@ strong {
 }
 
 .top-title .catch-copy-wrap p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   color: white;
   text-transform: capitalize;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media print, screen and (min-width: 960px) {
   .top-title .catch-copy-wrap p {
+    padding-left: 0;
+    padding-right: 0;
     font-size: 16px;
   }
 }
 
+.top-title .catch-copy-wrap p span {
+  display: inline-block;
+}
+
+@media print, screen and (min-width: 520px) {
+  .top-title .catch-copy-wrap p span {
+    display: initial;
+  }
+}
+
 .top-title .catch-copy {
-  font-size: 50px;
+  width: 90%;
+  margin: auto;
+  font-size: 35px;
   font-weight: bold;
   padding-bottom: 30px;
+}
+
+@media print, screen and (min-width: 520px) {
+  .top-title .catch-copy {
+    font-size: 50px;
+  }
+}
+
+@media print, screen and (min-width: 960px) {
+  .top-title .catch-copy {
+    margin: initial;
+  }
 }
 
 .top-title .catch-copy span {
@@ -290,8 +324,14 @@ strong {
           flex-flow: column-reverse;
   -webkit-box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.1);
-  width: 80%;
+  width: 100%;
   margin: auto;
+}
+
+@media print, screen and (min-width: 520px) {
+  .service-item {
+    width: 80%;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -321,8 +361,14 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
+}
+
+@media print, screen and (min-width: 520px) {
+  .service-item .text {
+    padding: 10px;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -350,6 +396,16 @@ strong {
 @media print, screen and (min-width: 960px) {
   .service-item .text .title {
     padding-bottom: 30px;
+  }
+}
+
+.service-item .text .desc {
+  font-size: 13px;
+}
+
+@media print, screen and (min-width: 520px) {
+  .service-item .text .desc {
+    font-size: 16px;
   }
 }
 
@@ -480,17 +536,18 @@ strong {
   background-color: rgba(0, 0, 0, 0.55);
   color: #fff;
   font-size: 16px;
-  padding: 20px 10px;
+  padding: 20px 0;
 }
 
-@media print, screen and (min-width: 960px) {
+@media print, screen and (min-width: 520px) {
   .about-list {
-    font-size: 18px;
+    padding: 20px 10px;
   }
 }
 
 @media print, screen and (min-width: 960px) {
   .about-list {
+    font-size: 18px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -518,9 +575,16 @@ strong {
 }
 
 .about-item .text {
+  font-size: 13px;
   text-align: center;
   width: 100%;
   text-transform: capitalize;
+}
+
+@media print, screen and (min-width: 520px) {
+  .about-item .text {
+    font-size: 16px;
+  }
 }
 
 .about-item .text span {
@@ -881,6 +945,12 @@ strong {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+@media print, screen and (min-width: 520px) {
+  .skill-item {
+    width: 45%;
+  }
 }
 
 @media print, screen and (min-width: 960px) {

@@ -35,6 +35,11 @@
   flex-flow: column-reverse;
   justify-content: center;
   text-align: center;
+
+  @include overMobile {
+    width: 45%;
+  }
+
   @include overTab {
     width: 25%;
 

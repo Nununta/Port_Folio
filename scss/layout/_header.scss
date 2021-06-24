@@ -83,8 +83,11 @@
   }
   .top-message {
     text-transform: uppercase;
-    font-size: 34px;
+    font-size: 26px;
     font-weight: bold;
+    @include overMobile {
+      font-size: 34px;
+    }
     span {
       display: inline-block;
       @include overTab {
@@ -100,19 +103,37 @@
       padding-left: 70px;
     }
     p {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       color: white;
       text-transform: capitalize;
+      padding-left: 15px;
+      padding-right: 15px;
       @include overTab {
+        padding-left: 0;
+        padding-right: 0;
         font-size: 16px;
+      }
+      span {
+        display: inline-block;
+        @include overMobile {
+          display: initial;
+        }
       }
     }
   }
   .catch-copy {
-    font-size: 50px;
+    width: 90%;
+    margin: auto;
+    font-size: 35px;
     font-weight: bold;
     padding-bottom: 30px;
+    @include overMobile {
+      font-size: 50px;
+    }
+    @include overTab {
+      margin: initial;
+    }
     span {
       display: block;
       @include overTab {

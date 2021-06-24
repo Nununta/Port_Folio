@@ -23,13 +23,17 @@
   background-color: rgba(0, 0, 0, 0.55);
   color: cl(white);
   font-size: 16px;
-  padding: 20px 10px;
+  padding: 20px 0;
+  @include overMobile {
+    padding: 20px 10px;
+  }
   @include overTab {
     font-size: 18px;
-  }
-  @include overTab {
     display: flex;
   }
+  // @include overTab {
+  //   display: flex;
+  // }
 }
 
 .about-item {
@@ -47,9 +51,13 @@
   }
 
   .text {
+    font-size: 13px;
     text-align: center;
     width: 100%;
     text-transform: capitalize;
+    @include overMobile {
+      font-size: 16px;
+    }
     span {
       color: #ff6b00;
     }
