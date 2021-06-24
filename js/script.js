@@ -45,24 +45,10 @@ $(function () {
   });
 });
 
-// $(function () {
-//   $(".js-accordion").on("click", function () {
-//     $(this).next().slideToggle();
-//   });
-// });
-
 //WOWアニメーション
 $(function () {
   new WOW().init();
 });
-
-//serviceの高さ調節
-// $(function () {
-//   $(".slide-img").matchHeight();
-//   $(".text-match").matchHeight();
-//   $(".special-item").matchHeight();
-//   $(".image").matchHeight();
-// });
 
 //スムーズスクロール
 $(function () {
@@ -94,3 +80,22 @@ $(function () {
     transition: "fade",
   });
 });
+
+//ハンバーガーメニュー
+// $(function () {
+//   $("#nav-btn").on("click", function () {
+//     $(this).toggleClass("-active");
+//     // $("#nav-list").animate({ width: "toggle" });
+//     if ($("#nav-list").css("margin-left") == "0px") {
+//       $("#nav-list").animate(
+//         { "margin-left": "-385px" },
+//         { duration: 700, easing: "swing" }
+//       );
+//     } else {
+//       $("#nav-list").animate(
+//         { "margin-left": "0" },
+//         { duration: 700, easing: "swing" }
+//       );
+//     }
+//   });
+// });

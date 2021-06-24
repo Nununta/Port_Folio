@@ -33,6 +33,9 @@
     font-size: 14px;
     span {
       display: inline-block;
+      @include overTab {
+        display: initial;
+      }
     }
     @include overTab {
       text-align: left;
