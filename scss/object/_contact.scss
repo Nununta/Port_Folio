@@ -1,19 +1,28 @@
 .contact-cont {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 10px;
   background-color: #ff9800;
   text-align: center;
   color: cl(white);
+  @include overMobile {
+    padding-top: 60px;
+  }
   h2 {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 700;
+    @include overMobile {
+      font-size: 36px;
+    }
     @include overTab {
       font-size: 42px;
     }
   }
   .desc {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 40px;
+    @include overMobile {
+      font-size: 20px;
+    }
     span {
       display: inline-block;
       @include overTab {
@@ -24,18 +33,26 @@
 }
 
 .contact-button {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 30px;
+  @include overMobile {
+    padding-top: 60px;
+  }
   a {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    width: 50%;
     height: 60px;
     background-color: #022bf3;
     border-radius: 1.55em;
     color: cl(white);
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 18px;
+    @include overMobile {
+      width: inherit;
+      max-width: 400px;
+      font-size: 24px;
+    }
   }
 }

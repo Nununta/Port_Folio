@@ -630,7 +630,7 @@ strong {
   text-transform: uppercase;
   margin: auto;
   text-align: center;
-  padding: 0 0 28px 0;
+  padding: 0 5px 28px 5px;
 }
 
 @media print, screen and (min-width: 520px) {
@@ -667,7 +667,13 @@ strong {
 }
 
 .price-table-item-image {
-  padding-top: 20px;
+  padding-top: 10px;
+}
+
+@media print, screen and (min-width: 520px) {
+  .price-table-item-image {
+    padding-top: 20px;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -851,16 +857,28 @@ strong {
 }
 
 .contact-cont {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 10px;
   background-color: #ff9800;
   text-align: center;
   color: #fff;
 }
 
+@media print, screen and (min-width: 520px) {
+  .contact-cont {
+    padding-top: 60px;
+  }
+}
+
 .contact-cont h2 {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 700;
+}
+
+@media print, screen and (min-width: 520px) {
+  .contact-cont h2 {
+    font-size: 36px;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -870,8 +888,14 @@ strong {
 }
 
 .contact-cont .desc {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 40px;
+}
+
+@media print, screen and (min-width: 520px) {
+  .contact-cont .desc {
+    font-size: 20px;
+  }
 }
 
 .contact-cont .desc span {
@@ -885,8 +909,14 @@ strong {
 }
 
 .contact-button {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 30px;
+}
+
+@media print, screen and (min-width: 520px) {
+  .contact-button {
+    padding-top: 60px;
+  }
 }
 
 .contact-button a {
@@ -899,13 +929,21 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 400px;
+  width: 50%;
   height: 60px;
   background-color: #022bf3;
   border-radius: 1.55em;
   color: #fff;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: 18px;
+}
+
+@media print, screen and (min-width: 520px) {
+  .contact-button a {
+    width: inherit;
+    max-width: 400px;
+    font-size: 24px;
+  }
 }
 
 .skill-cont {

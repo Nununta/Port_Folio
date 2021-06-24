@@ -22,7 +22,7 @@
   text-transform: uppercase;
   margin: auto;
   text-align: center;
-  padding: 0 0 28px 0;
+  padding: 0 5px 28px 5px;
   @include overMobile {
     padding: 0 15px 28px 15px;
   }
@@ -49,7 +49,11 @@
 }
 
 .price-table-item-image {
-  padding-top: 20px;
+  padding-top: 10px;
+  @include overMobile {
+    padding-top: 20px;
+  }
+
   @include overTab {
     padding-top: initial;
   }
