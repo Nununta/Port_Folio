@@ -630,7 +630,13 @@ strong {
   text-transform: uppercase;
   margin: auto;
   text-align: center;
-  padding: 0 15px 28px 15px;
+  padding: 0 0 28px 0;
+}
+
+@media print, screen and (min-width: 520px) {
+  .price-item {
+    padding: 0 15px 28px 15px;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -676,9 +682,16 @@ strong {
 
 .price-table-item-title {
   font-weight: 600;
-  font-size: 26px;
-  width: 80%;
+  font-size: 20px;
+  width: 100%;
   margin: auto;
+}
+
+@media print, screen and (min-width: 520px) {
+  .price-table-item-title {
+    font-size: 26px;
+    width: 80%;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -691,7 +704,13 @@ strong {
 
 .price-table-item-price {
   line-height: 1.5;
-  font-size: 28px;
+  font-size: 18px;
+}
+
+@media print, screen and (min-width: 520px) {
+  .price-table-item-price {
+    font-size: 28px;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -921,8 +940,27 @@ strong {
   color: #fff;
   font-size: 18px;
   padding: 20px 40px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media print, screen and (min-width: 520px) {
+  .skill-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: initial;
+            flex-flow: initial;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media print, screen and (min-width: 960px) {
@@ -933,7 +971,7 @@ strong {
 }
 
 .skill-item {
-  width: 45%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -945,11 +983,13 @@ strong {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 @media print, screen and (min-width: 520px) {
   .skill-item {
     width: 45%;
+    margin-bottom: 0;
   }
 }
 
@@ -962,13 +1002,20 @@ strong {
   }
 }
 
-.skill-item:nth-child(even) {
-  margin-left: 20px;
+@media print, screen and (min-width: 520px) {
+  .skill-item:nth-child(even) {
+    margin-left: 20px;
+  }
 }
 
 .skill-item .level {
-  margin-top: 20px;
   text-transform: capitalize;
+}
+
+@media print, screen and (min-width: 520px) {
+  .skill-item .level {
+    margin-top: 10px;
+  }
 }
 
 .skill-item .level span {

@@ -22,7 +22,13 @@
   color: cl(white);
   font-size: 18px;
   padding: 20px 40px;
-  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: center;
+  @include overMobile {
+    flex-flow: initial;
+    align-items: initial;
+    flex-wrap: wrap;
+  }
 
   @include overTab {
     flex-wrap: initial;
@@ -30,29 +36,34 @@
 }
 
 .skill-item {
-  width: 45%;
+  width: 80%;
   display: flex;
   flex-flow: column-reverse;
   justify-content: center;
   text-align: center;
+  margin-bottom: 20px;
 
   @include overMobile {
     width: 45%;
+    margin-bottom: 0;
   }
 
   @include overTab {
     width: 25%;
-
     + .skill-item {
       margin-left: 20px;
     }
   }
   &:nth-child(even) {
-    margin-left: 20px;
+    @include overMobile {
+      margin-left: 20px;
+    }
   }
 
   .level {
-    margin-top: 20px;
+    @include overMobile {
+      margin-top: 10px;
+    }
     text-transform: capitalize;
     span {
       color: yellow;
