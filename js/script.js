@@ -27,21 +27,28 @@ $(function () {
 //$(function())で括らないとhtmlよりも先にjsが動いてしまう
 
 //クリック時Fadein,FadeOut
+// $(function () {
+//   $("#nav-btn").on("click", function () {
+//     $(this).toggleClass("-active");
+//     // $("#nav-list").animate({ width: "toggle" });
+//     if ($("#nav-list").css("margin-left") == "0px") {
+//       $("#nav-list").animate(
+//         { "margin-left": "-385px" },
+//         { duration: 700, easing: "swing" }
+//       );
+//     } else {
+//       $("#nav-list").animate(
+//         { "margin-left": "0" },
+//         { duration: 700, easing: "swing" }
+//       );
+//     }
+//   });
+// });
+
 $(function () {
   $("#nav-btn").on("click", function () {
     $(this).toggleClass("-active");
-    // $("#nav-list").animate({ width: "toggle" });
-    if ($("#nav-list").css("margin-left") == "0px") {
-      $("#nav-list").animate(
-        { "margin-left": "-385px" },
-        { duration: 700, easing: "swing" }
-      );
-    } else {
-      $("#nav-list").animate(
-        { "margin-left": "0" },
-        { duration: 700, easing: "swing" }
-      );
-    }
+    $("#nav-list").toggleClass("-active");
   });
 });
 

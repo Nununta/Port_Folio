@@ -99,8 +99,13 @@ strong {
   margin-top: 40px;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.nav-list.-active {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media print, screen and (min-width: 960px) {
